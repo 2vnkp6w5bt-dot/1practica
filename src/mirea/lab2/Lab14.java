@@ -16,7 +16,7 @@ public class Lab14 {
         System.out.println("\nЗадание 3");
         String text3 = "Товар 1: 25.98 USD, Товар 2: 100 RUB, Товар 3: 44 ERR, Товар 4: 50.5 EU.";
 
-        String regex3 = "\\d+(\\.\\d)?\\s+(USD|RUB|EU)\\b";
+        String regex3 = "\\d+(\\.\\d{2})?\\s+(USD|RUB|EU)\\b";
 
         Pattern pattern3 = Pattern.compile(regex3);
         Matcher matcher3 = pattern3.matcher(text3);
